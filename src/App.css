@@ -1,0 +1,66 @@
+* {
+  font-family: 'Lato', sans-serif;
+  --primaryMain: #a7cecb;
+  --primaryDark: #8cadab;
+  --secondaryMain: #e692a1;
+  --secondaryDark: #b4737f;
+  --tertiaryMain: #9d9faa;
+  --tertiaryDark: #2d2d2d;
+  --tertiaryLight: #f7f7f7;
+  --backgroundLight: #ffffff;
+  --backgroundDark: #333333;
+  --fontDark: #000;
+  --fontLight: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+/* --------------------------------------- */
+/* NAV */
+/* --------------------------------------- */
+
+/* ----- MAIN NAV ----- */
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* ----- NAV LINKS ----- */
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: var(--fontDark);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link-underline {
+  position: absolute;
+  bottom: 1px;
+  right: -6px;
+  z-index: -1;
+  height: 8px;
+  width: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  background-color: var(--primaryMain);
+  transition: all 0.2s;
+}
+
+.nav-link:hover .nav-link-underline,
+.nav-link:active .nav-link-underline {
+  background-color: var(--secondaryMain);
+}
