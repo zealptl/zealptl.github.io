@@ -5,10 +5,10 @@
   --secondaryMain: #e692a1;
   --secondaryDark: #b4737f;
   --tertiaryMain: #9d9faa;
-  --tertiaryDark: #2d2d2d;
+  --tertiaryDark: #1d1d1d;
   --tertiaryLight: #f7f7f7;
   --backgroundLight: #ffffff;
-  --backgroundDark: #333333;
+  --backgroundDark: #222;
   --fontDark: #000;
   --fontLight: #fff;
   margin: 0;
@@ -42,7 +42,6 @@ a:active {
 /* --------------------------------------- */
 /* NAV */
 /* --------------------------------------- */
-
 /* ----- MAIN NAV ----- */
 .main-nav {
   list-style: none;
@@ -169,6 +168,7 @@ a:active {
   border-radius: 50%;
 }
 
+/* ----- ABOUT DESCRIPTION ----- */
 .about-description {
   height: 100vh;
   border-radius: 0 0 0 250px;
@@ -180,9 +180,62 @@ a:active {
 
 .about-description-text {
   width: 70%;
+  padding-top: 30px;
   font-weight: 300;
   font-size: 18px;
   letter-spacing: 0.1em;
   line-height: 150%;
   z-index: 1;
+}
+
+/* --------------------------------------- */
+/* SKILLS PAGE */
+/* --------------------------------------- */
+.skills-page {
+  height: 100vh;
+  background-color: var(--backgroundDark);
+  position: relative;
+  border-radius: 0 0 250px 0;
+}
+
+.skill-container {
+  margin: 10px auto 0 auto;
+  filter: drop-shadow(0px 2px 2px rgba(187, 187, 187, 0.25));
+}
+
+.skill-container p {
+  color: var(--fontLight);
+  font-size: 18px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.skill-icon {
+  font-size: 30px;
+  color: var(--fontLight);
+}
+
+.skill-bar-container {
+  height: 30px;
+  background-color: var(--backgroundLight);
+  border-radius: 6px;
+  margin-left: 50px;
+  margin-top: -33px;
+}
+
+.skill-bar {
+  background-color: var(--primaryMain);
+  height: 100%;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.skills-page-heading {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 144px;
+  letter-spacing: 0.2em;
+  color: var(--tertiaryDark);
+  transform: rotate(-90deg) translate(40%, -100%);
 }
