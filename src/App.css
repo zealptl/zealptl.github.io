@@ -192,14 +192,15 @@ a:active {
 /* SKILLS PAGE */
 /* --------------------------------------- */
 .skills-page {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--backgroundDark);
   position: relative;
   border-radius: 0 0 250px 0;
+  padding: 50px 0;
 }
 
 .skill-container {
-  margin: 10px auto 0 auto;
+  margin: 20px auto 0 auto;
   filter: drop-shadow(0px 2px 2px rgba(187, 187, 187, 0.25));
 }
 
