@@ -1,5 +1,6 @@
 # Personal Portfolio V3
 
-#### This site is still under development. Please find the links to my GitHub & LinkedIn below
+##### This site is still under development. Please find the links to my GitHub & LinkedIn below
 
-[link to Google!](http://google.com)
+* [Github](https://github.com/zealptl)
+* [LinkedIn](https://www.linkedin.com/in/zealptl/)
