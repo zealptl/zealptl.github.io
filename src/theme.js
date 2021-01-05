@@ -19,8 +19,11 @@ const theme = createMuiTheme({
       light: '#fff',
       dark: '#333',
     },
+    font: {
+      dark: '#000',
+      light: '#fff',
+    },
   },
-
   // add more css properties as desired
 });
 

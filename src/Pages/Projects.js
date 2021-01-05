@@ -15,6 +15,10 @@ const Projects = () => {
       image: projectImg,
     },
     {
+      title: 'Hacktech 2020',
+      image: projectImg,
+    },
+    {
       title: 'CCNY Printing',
       image: projectImg,
     },
