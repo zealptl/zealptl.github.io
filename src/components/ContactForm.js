@@ -111,6 +111,28 @@ const ContactForm = () => {
           </Grid>
           <Grid item xs={12}>
             <TextField
+              id='subject'
+              label='Subject'
+              className={classes.textField}
+              required
+              fullWidth
+              InputLabelProps={{
+                classes: {
+                  root: classes.cssLabel,
+                  focused: classes.cssFocused,
+                },
+              }}
+              InputProps={{
+                classes: {
+                  root: classes.cssOutlinedInput,
+                  focused: classes.cssFocused,
+                  notchedOutline: classes.notchedOutline,
+                },
+              }}
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <TextField
               id='message'
               label='Message'
               className={classes.textField}

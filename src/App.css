@@ -354,4 +354,34 @@ a:active {
   height: 100%;
   border-radius: 250px 0 0 0;
   background-color: var(--backgroundLight);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-link {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.footer-link p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.footer-link-border {
+  width: 6px;
+  height: 75px;
+  background-color: var(--primaryMain);
+  border-radius: 3px;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 25px;
+}
+
+.footer-copyright p {
+  font-size: 18px;
 }
