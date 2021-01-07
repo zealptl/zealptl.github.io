@@ -10,6 +10,7 @@ const Contact = () => {
       alignItems='center'
       justify='center'
       className='contact-page'
+      id='contact'
     >
       <h1 className='contact-page-heading'>Contact</h1>
       <Grid item xs={6}>

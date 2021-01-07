@@ -6,7 +6,7 @@ import AboutDescription from '../components/AboutDescription';
 
 const About = () => {
   return (
-    <Grid container className='about-page'>
+    <Grid container className='about-page' id='about'>
       <Grid item xs={5}>
         <AboutImg />
       </Grid>

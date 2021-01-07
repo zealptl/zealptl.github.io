@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const NavLink = (props) => {
   return props.download ? (
@@ -7,11 +8,31 @@ const NavLink = (props) => {
       <div className='nav-link-underline'></div>
     </a>
   ) : (
-    <a href={props.to} className='nav-link'>
+    <Link
+      activeClass='active'
+      spy={true}
+      smooth={true}
+      duration={500}
+      to={props.to}
+      className='nav-link'
+    >
       {props.heading}
       <div className='nav-link-underline'></div>
-    </a>
+    </Link>
   );
 };
 
 export default NavLink;
+
+/*
+
+<Link
+    activeClass="active"
+    to="section1"
+    spy={true}
+    smooth={true}
+    offset={-70}
+    duration={500}
+>
+
+*/

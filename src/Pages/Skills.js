@@ -58,6 +58,7 @@ const Skills = () => {
       alignItems='center'
       justify='center'
       className='skills-page'
+      id='skills'
     >
       <Grid item xs={8}>
         <h1 className='skills-page-heading'>Skills</h1>

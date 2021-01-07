@@ -10,7 +10,7 @@ const FooterLink = (props) => {
       download={props.download}
       className='footer-link'
     >
-      <Icon />
+      <Icon className='footer-icon' />
       <p>{props.heading}</p>
     </a>
   ) : (

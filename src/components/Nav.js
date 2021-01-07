@@ -1,11 +1,13 @@
 import React from 'react';
+import Navigation from 'react-sticky-nav';
+
 import NavLink from './NavLink';
 import resume from '../assets/Zeal_Patel_Resume.pdf';
 
 const Nav = () => {
   const links = [
     {
-      to: '/about',
+      to: 'about',
       heading: 'About',
     },
     {
@@ -14,30 +16,32 @@ const Nav = () => {
       download: 'Zeal_Patel_Resume.pdf',
     },
     {
-      to: '/skills',
+      to: 'skills',
       heading: 'Skills',
     },
     {
-      to: '/projects',
+      to: 'projects',
       heading: 'Projects',
     },
     {
-      to: '/contact',
-      heading: 'About',
+      to: 'contact',
+      heading: 'Contact',
     },
   ];
   return (
-    <ul className='main-nav'>
-      {links.map((link) => (
-        <li>
-          <NavLink
-            to={link.to}
-            heading={link.heading}
-            download={link.download}
-          />
-        </li>
-      ))}
-    </ul>
+    <Navigation className='main-nav'>
+      <ul>
+        {links.map((link) => (
+          <li>
+            <NavLink
+              to={link.to}
+              heading={link.heading}
+              download={link.download}
+            />
+          </li>
+        ))}
+      </ul>
+    </Navigation>
   );
 };
 

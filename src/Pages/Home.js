@@ -6,7 +6,7 @@ import HomeText from '../components/HomeText';
 
 const Home = () => {
   return (
-    <Grid container className='home-page'>
+    <Grid container className='home-page' id='home'>
       <Grid item xs={5}>
         <HomeLogo />
       </Grid>
