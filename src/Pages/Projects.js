@@ -3,28 +3,33 @@ import { Grid } from '@material-ui/core';
 
 import Project from '../components/Project';
 import projectImg from '../assets/project1.png';
+import budgetImg from '../assets/budget.png';
+import ccny_coursesImg from '../assets/ccny_courses.png';
+import ccny_printingImg from '../assets/ccny_printing.png';
+import foodtopiaImg from '../assets/foodtopia.png';
+import hacktechImg from '../assets/hacktech.png';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Foodtopia',
-      image: projectImg,
+      image: foodtopiaImg,
     },
     {
       title: 'Bud-Get',
-      image: projectImg,
+      image: budgetImg,
     },
     {
       title: 'Hacktech 2020',
-      image: projectImg,
+      image: hacktechImg,
     },
     {
       title: 'CCNY Printing',
-      image: projectImg,
+      image: ccny_printingImg,
     },
     {
       title: 'CCNY Courses',
-      image: projectImg,
+      image: ccny_coursesImg,
     },
   ];
 
