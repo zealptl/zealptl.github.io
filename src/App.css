@@ -64,7 +64,7 @@ a:active {
 /* ----- NAV LINKS ----- */
 .nav-link {
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .nav-link-underline {
@@ -83,7 +83,7 @@ a:active {
 .nav-link:hover .nav-link-underline,
 .nav-link:active .nav-link-underline {
   background-color: var(--secondaryMain);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* ------------------s--------------------- */
