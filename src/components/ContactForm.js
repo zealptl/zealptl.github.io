@@ -7,6 +7,8 @@ import {
   withStyles,
   Grid,
 } from '@material-ui/core';
+import { ToastContainer, toast, Slide } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const useStyles = makeStyles((theme) => ({
   cssLabel: {
@@ -41,10 +43,8 @@ const ContactForm = () => {
     message: '',
   });
 
-  const onChange = (e) => {
+  const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    console.log(formData);
-  };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -63,9 +63,11 @@ const ContactForm = () => {
       )
       .then(
         (result) => {
+          toast.success('Email sent successfully!');
           console.log(result.text);
         },
         (error) => {
+          toast.error('Sorry, some error occured');
           console.log(error.text);
         }
       );
@@ -80,6 +82,16 @@ const ContactForm = () => {
 
   return (
     <div>
+      <ToastContainer
+        position='top-center'
+        autoClose={5000}
+        hideProgressBar={true}
+        transition={Slide}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <form onSubmit={onSubmit}>
         <Grid container spacing={2}>
           <Grid item xs={6}>
