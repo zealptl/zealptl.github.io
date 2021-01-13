@@ -2,7 +2,6 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 
 import Project from '../components/Project';
-import projectImg from '../assets/project1.png';
 import budgetImg from '../assets/budget.png';
 import ccny_coursesImg from '../assets/ccny_courses.png';
 import ccny_printingImg from '../assets/ccny_printing.png';

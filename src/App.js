@@ -1,4 +1,5 @@
 import './App.css';
+import './Queries.css';
 import { ThemeProvider } from '@material-ui/core';
 import AnimatedCursor from 'react-animated-cursor';
 

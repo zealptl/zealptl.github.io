@@ -3,7 +3,7 @@ import React from 'react';
 const AboutDescription = () => {
   return (
     <div className='about-description'>
-      <h1 className='background-section-heading'>About</h1>
+      <h1 className='about-section-heading'>About</h1>
       <p className='about-description-text'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

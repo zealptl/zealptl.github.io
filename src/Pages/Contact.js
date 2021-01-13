@@ -13,7 +13,7 @@ const Contact = () => {
       id='contact'
     >
       <h1 className='contact-page-heading'>Contact</h1>
-      <Grid item xs={6}>
+      <Grid item xs={7}>
         <ContactForm />
       </Grid>
     </Grid>

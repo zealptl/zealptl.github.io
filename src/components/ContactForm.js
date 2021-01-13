@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const useStyles = makeStyles((theme) => ({
   cssLabel: {
     color: '#fff',
-    fontSize: '18px',
+    fontSize: '16px',
   },
   submit: {
     margin: theme.spacing(3, 0, 2),

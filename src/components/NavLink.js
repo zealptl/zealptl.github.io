@@ -14,6 +14,7 @@ const NavLink = (props) => {
       smooth={true}
       duration={500}
       to={props.to}
+      offset={-50}
       className='nav-link'
     >
       {props.heading}
