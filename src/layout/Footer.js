@@ -4,7 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
 import resume from '../assets/Zeal_Patel_Resume.pdf';
-import FooterLink from './FooterLink';
+import FooterLink from '../components/FooterLink';
 
 const Footer = () => {
   return (

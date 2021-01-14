@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from 'react-sticky-nav';
 
-import NavLink from './NavLink';
+import NavLink from '../components/NavLink';
 import resume from '../assets/Zeal_Patel_Resume.pdf';
 
 const Nav = () => {

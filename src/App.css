@@ -39,7 +39,7 @@ a:active {
   background-color: var(--backgroundLight);
   /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); */
   padding-top: 15px;
-  z-index: 5;
+  z-index: 2;
 }
 
 .main-nav ul {
@@ -245,6 +245,7 @@ a:active {
   letter-spacing: 0.2em;
   color: var(--tertiaryDark);
   transform: rotate(-90deg) translate(40%, -100%);
+  z-index: 1;
 }
 
 /* --------------------------------------- */
@@ -252,7 +253,6 @@ a:active {
 /* --------------------------------------- */
 .projects-page {
   background-color: var(--backgroundDark);
-  z-index: -1;
   position: relative;
 }
 
@@ -262,7 +262,6 @@ a:active {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
   background-color: var(--backgroundDark);
 }
 
@@ -270,7 +269,6 @@ a:active {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
   height: 100%;
   width: 100%;
   border-radius: 250px 0 0 250px;
@@ -285,18 +283,18 @@ a:active {
   letter-spacing: 0.2em;
   color: var(--tertiaryLight);
   transform: rotate(-90deg) translate(-40%, 150%);
+  z-index: 1;
 }
 
 /* ----- PROJECT IMG ----- */
 .project-container {
-  margin: 50px auto;
   position: relative;
+  margin-top: 50px;
 }
 
 .project-image {
   width: 100%;
   height: auto;
-  z-index: 0;
   filter: drop-shadow(0px 25px 25px rgba(0, 0, 0, 0.25));
   border-radius: 25px;
 }

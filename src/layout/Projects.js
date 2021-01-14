@@ -43,7 +43,6 @@ const Projects = () => {
       <h1 className='projects-page-heading'>Projects</h1>
       <Grid className='projects-section-dark' item xs={6}></Grid>
       <Grid className='projects-section-light' item xs={6}></Grid>
-
       {projects.map((project) => (
         <Grid item xs={7}>
           <Project title={project.title} image={project.image} />

@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import HomeLogo from '../components/HomeLogo';
 import HomeText from '../components/HomeText';
 
-const Home = () => {
+const Landing = () => {
   return (
     <Grid container className='home-page' id='home'>
       <Grid item xs={5}>
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Landing;
