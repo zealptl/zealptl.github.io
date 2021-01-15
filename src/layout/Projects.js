@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
-import Project from '../components/Project';
+import ProjectPreview from '../components/ProjectPreview';
 import budgetImg from '../assets/budget.png';
 import ccny_coursesImg from '../assets/ccny_courses.png';
 import ccny_printingImg from '../assets/ccny_printing.png';
@@ -13,22 +13,27 @@ const Projects = () => {
     {
       title: 'Foodtopia',
       image: foodtopiaImg,
+      to: '/projects/foodtopia',
     },
     {
       title: 'Bud-Get',
       image: budgetImg,
+      to: '/projects/bud-get',
     },
     {
       title: 'Hacktech 2020',
       image: hacktechImg,
+      to: '/projects/hacktech',
     },
     {
       title: 'CCNY Printing',
       image: ccny_printingImg,
+      to: '/projects/ccny-printing',
     },
     {
       title: 'CCNY Courses',
       image: ccny_coursesImg,
+      to: '/projects/ccny-courses',
     },
   ];
 
@@ -45,7 +50,11 @@ const Projects = () => {
       <Grid className='projects-section-light' item xs={6}></Grid>
       {projects.map((project) => (
         <Grid item xs={7}>
-          <Project title={project.title} image={project.image} />
+          <ProjectPreview
+            title={project.title}
+            image={project.image}
+            to={project.to}
+          />
         </Grid>
       ))}
     </Grid>

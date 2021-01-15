@@ -329,6 +329,7 @@ a:active {
   float: right;
   border: 5px solid var(--secondaryMain);
   border-radius: 50%;
+  cursor: pointer;
   transform: translate(50%, -200%);
 }
 
