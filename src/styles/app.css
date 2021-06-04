@@ -25,8 +25,7 @@ a:visited,
 a:hover,
 a:focus,
 a:active {
-	text-decoration: none;
-	color: var(--fontDark);
+	text-decoration: none !important;
 }
 
 /* --------------------------------------- */
@@ -55,6 +54,7 @@ a:active {
 .nav-link {
 	position: relative;
 	cursor: pointer;
+	color: var(--fontDark);
 }
 
 .nav-link-underline {
@@ -203,7 +203,7 @@ a:active {
 	background-color: var(--backgroundDark);
 	position: relative;
 	border-radius: 0 0 250px 0;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
 .skill-container {
@@ -255,6 +255,7 @@ a:active {
 .projects-page {
 	background-color: var(--backgroundDark);
 	position: relative;
+	padding-bottom: 100px;
 }
 
 .projects-section-dark {
@@ -290,7 +291,7 @@ a:active {
 /* ----- PROJECT IMG ----- */
 .project-container {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 100px;
 }
 
 .project-image {
@@ -348,6 +349,7 @@ a:active {
 	white-space: nowrap;
 	letter-spacing: 0.25em;
 	transition: all 0.25s ease;
+	color: var(--fontDark);
 }
 
 .view-project-link-container:hover .view-project-link {
@@ -363,11 +365,106 @@ a:active {
 		transform: rotate(359deg);
 	}
 }
+
+/* --------------------------------------- */
+/* PROJECT DETAILS PAGE */
+/* --------------------------------------- */
+.project-highlight-container {
+	height: 90vh;
+	background: var(--backgroundDark);
+	border-radius: 0 250px 0 0;
+}
+
+/* ----- BACK LINK ----- */
+.back-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 60px;
+	margin-left: 50px;
+	padding-top: 20px;
+	color: var(--tertiaryLight);
+	position: relative;
+	z-index: 1;
+	font-weight: 300;
+	transition: all 0.25s;
+}
+
+.back-icon {
+	transform: rotate(-180deg);
+	margin-right: 10px;
+	color: var(--tertiaryLight);
+}
+
+.back-link-underline {
+	position: absolute;
+	bottom: 5px;
+	right: -25px;
+	z-index: -1;
+	height: 5px;
+	width: 25px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	background-color: var(--primaryMain);
+	transition: all 0.25s;
+}
+
+.back-link:hover,
+.back-link:active,
+.back-link:hover .back-icon,
+.back-link:active .back-icon {
+	color: var(--fontLight);
+}
+.back-link:hover .back-link-underline,
+.back-link:active .back-link-underline {
+	background-color: var(--secondaryMain);
+}
+
+/* ----- PROJECT HIGHLIGHTS SECTION ----- */
+.project-title {
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 150%;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.125em;
+	color: #ffffff;
+	margin-left: 50px;
+}
+
+/* ----- PROJECT TECHSTACK ----- */
+.project-tech-stack-year-container {
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+.project-tech-stack-heading,
+.project-year-heading {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 100%;
+	letter-spacing: 0.1.25em;
+	color: var(--fontLight);
+	margin-bottom: 5px;
+}
+
+.tech-stack-list {
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+.tech-stack-list li,
+.project-year {
+	color: var(--fontLight);
+	margin: 5px 0;
+	font-size: 18px;
+}
+
 /* --------------------------------------- */
 /* CONTACT PAGE */
 /* --------------------------------------- */
 .contact-page {
-	height: 100vh;
+	height: 90vh;
 	background-color: var(--backgroundDark);
 	position: relative;
 	border-radius: 0 0 250px 0;
@@ -383,10 +480,6 @@ a:active {
 	transform: rotate(-90deg) translate(-8%, 50%);
 	transform-origin: 0%;
 }
-
-/* --------------------------------------- */
-/* PROJECT DETAILS PAGE */
-/* --------------------------------------- */
 
 /* --------------------------------------- */
 /* FOOTER */
