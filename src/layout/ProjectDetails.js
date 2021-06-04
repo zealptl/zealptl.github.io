@@ -3,6 +3,7 @@ import { Grid } from '@material-ui/core';
 
 import Nav from './Nav';
 import ProjectHighLight from '../components/ProjectHighlight';
+import ProjectDescription from '../components/ProjectDescription';
 
 const ProjectDetails = (props) => {
 	return (
@@ -16,7 +17,9 @@ const ProjectDetails = (props) => {
 						year={props.year}
 					/>
 				</Grid>
-				<Grid item xs={7}></Grid>
+				<Grid item xs={7}>
+					<ProjectDescription />
+				</Grid>
 			</Grid>
 		</div>
 	);

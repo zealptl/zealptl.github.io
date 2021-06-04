@@ -186,7 +186,8 @@ a:active {
 	padding-bottom: 50px;
 }
 
-.about-description-text {
+.about-description-text,
+.project-description-text {
 	width: 70%;
 	padding-top: 30px;
 	font-weight: 300;
@@ -340,7 +341,10 @@ a:active {
 }
 
 .view-project-link-container:hover {
-	transform: scale(1.4);
+	width: 125px;
+	height: 125px;
+	right: -60px;
+	bottom: 110px;
 	background: var(--secondaryMain);
 	border-color: var(--secondaryMain);
 }
@@ -353,7 +357,7 @@ a:active {
 }
 
 .view-project-link-container:hover .view-project-link {
-	transform: scale(0.6);
+	transform: scale(0.7);
 	letter-spacing: 0.125em;
 }
 
@@ -458,6 +462,28 @@ a:active {
 	color: var(--fontLight);
 	margin: 5px 0;
 	font-size: 18px;
+}
+
+/* ----- PROJECT DESCRIPTION----- */
+.project-description-container {
+	background: var(--backgroundDark);
+}
+
+.project-description-container-inner {
+	height: 90vh;
+	background: var(--backgroundLight);
+	border-radius: 0px 0px 0px 250px;
+}
+
+.project-description-text {
+	margin: 30px auto 0 auto;
+	width: 70%;
+	padding-top: 30px;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	line-height: 150%;
+	z-index: 1;
 }
 
 /* --------------------------------------- */
