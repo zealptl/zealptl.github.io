@@ -1,13 +1,25 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
+
+import Nav from './Nav';
+import ProjectHighLight from '../components/ProjectHighlight';
 
 const ProjectDetails = (props) => {
-  console.log('HEEADING:', props.heading);
-  return (
-    <div>
-      <h1>{props.heading}</h1>
-      {/* <h1>Hello World</h1> */}
-    </div>
-  );
+	return (
+		<div>
+			<Nav />
+			<Grid container>
+				<Grid item xs={5}>
+					<ProjectHighLight
+						title={props.title}
+						techStack={props.techStack}
+						year={props.year}
+					/>
+				</Grid>
+				<Grid item xs={7}></Grid>
+			</Grid>
+		</div>
+	);
 };
 
 export default ProjectDetails;
