@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import FoodtopiaImg from '../assets/foodtopia.png';
+
 import ProjectDetails from '../layout/ProjectDetails';
 
 const ProjectPages = () => {
@@ -15,6 +17,24 @@ const ProjectPages = () => {
 				'MongoDB',
 			]}
 			year='2020'
+			images={[
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+			]}
 		/>
 	);
 	const budGetPage = () => (
@@ -22,6 +42,24 @@ const ProjectPages = () => {
 			title='Bud-Get'
 			techStack={['JavaScript', 'Express', 'React', 'MongoDB']}
 			year='2020'
+			images={[
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+			]}
 		/>
 	);
 	const hacktechPage = () => (
@@ -29,16 +67,74 @@ const ProjectPages = () => {
 			title='HackTech'
 			techStack={['HTML / CSS', 'JavaScript', 'Firebase']}
 			year='2020'
+			images={[
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+			]}
 		/>
 	);
 	const ccnyPrintingPage = () => (
-		<ProjectDetails title='CCNY Printing' techStack={['C++']} year='2019' />
+		<ProjectDetails
+			title='CCNY Printing'
+			techStack={['C++']}
+			year='2019'
+			images={[
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+			]}
+		/>
 	);
 	const ccnyCoursesPage = () => (
 		<ProjectDetails
 			title='CCNY Courses'
 			techStack={['Java', 'JavaFX', 'MySQL']}
 			year='2020'
+			images={[
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+				{
+					img: FoodtopiaImg,
+					title: 'Customer Dashboard',
+				},
+			]}
 		/>
 	);
 

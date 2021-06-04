@@ -4,6 +4,7 @@ import { Grid } from '@material-ui/core';
 import Nav from './Nav';
 import ProjectHighLight from '../components/ProjectHighlight';
 import ProjectDescription from '../components/ProjectDescription';
+import ProjectDetailImage from '../components/ProjectDetailImage';
 
 const ProjectDetails = (props) => {
 	return (
@@ -19,6 +20,19 @@ const ProjectDetails = (props) => {
 				</Grid>
 				<Grid item xs={7}>
 					<ProjectDescription />
+				</Grid>
+			</Grid>
+
+			<Grid
+				container
+				alignItems='center'
+				justify='center'
+				className='project-detail-images'
+			>
+				<Grid item xs={7}>
+					{props.images.map((image) => (
+						<ProjectDetailImage title={image.title} img={image.img} />
+					))}
 				</Grid>
 			</Grid>
 		</div>

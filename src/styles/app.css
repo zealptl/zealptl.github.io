@@ -292,7 +292,7 @@ a:active {
 /* ----- PROJECT IMG ----- */
 .project-container {
 	position: relative;
-	margin-top: 100px;
+	margin: 60px 0;
 }
 
 .project-image {
@@ -476,14 +476,23 @@ a:active {
 }
 
 .project-description-text {
-	margin: 30px auto 0 auto;
+	margin: 0 auto;
 	width: 70%;
-	padding-top: 30px;
+	padding-top: 50px;
 	font-weight: 300;
 	font-size: 18px;
 	letter-spacing: 0.1em;
 	line-height: 150%;
 	z-index: 1;
+}
+
+.project-detail-images {
+	background-color: var(--backgroundDark);
+}
+
+.project-detail-image-title {
+	color: var(--fontLight);
+	margin-bottom: 10px;
 }
 
 /* --------------------------------------- */
@@ -534,6 +543,7 @@ a:active {
 	margin: 0 20px;
 	text-align: center;
 	transition: all 0.25s ease;
+	color: var(--fontDark);
 }
 
 .footer-link p {
