@@ -256,7 +256,6 @@ a:active {
 .projects-page {
 	background-color: var(--backgroundDark);
 	position: relative;
-	padding-bottom: 100px;
 }
 
 .projects-section-dark {
@@ -394,7 +393,8 @@ a:active {
 	transition: all 0.25s;
 }
 
-.back-icon {
+.back-icon,
+.home-link-icon {
 	transform: rotate(-180deg);
 	margin-right: 10px;
 	color: var(--tertiaryLight);
@@ -486,13 +486,93 @@ a:active {
 	z-index: 1;
 }
 
+/* ----- PROJECT DETAILED IMAGES ----- */
+
 .project-detail-images {
 	background-color: var(--backgroundDark);
+	border-radius: 0px 0px 250px 0px;
 }
 
 .project-detail-image-title {
 	color: var(--fontLight);
 	margin-bottom: 10px;
+}
+
+/* ----- NEXT PROJECT DETAIL PAGE LINK ----- */
+.next-project-detail-link-wrapper {
+	height: 90vh;
+}
+
+.next-project-detail-page-container {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.next-project-detail-page-link {
+	font-weight: bold;
+	font-size: 48px;
+	letter-spacing: 0.125em;
+	color: var(--fontDark);
+	position: relative;
+	z-index: 1;
+}
+
+.next-project-icon {
+	margin-left: 10px;
+}
+
+.next-project-detail-link-underline {
+	width: 100px;
+	height: 15px;
+	position: absolute;
+	right: 8.5%;
+	bottom: 2%;
+	background: var(--primaryMain);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+	z-index: -1;
+	transition: all 0.2s ease;
+}
+
+.next-project-detail-page-link:hover .next-project-detail-link-underline {
+	background: var(--secondaryMain);
+}
+
+/* ----- HOME LINK ----- */
+.home-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 60px;
+	margin-left: -40px;
+	padding-top: 20px;
+	color: var(--fontDark);
+	position: relative;
+	z-index: 1;
+	font-weight: 300;
+	transition: all 0.25s;
+}
+
+.home-link-icon {
+	color: var(--fontDark);
+}
+
+.home-link-underline {
+	position: absolute;
+	bottom: 5px;
+	right: -35px;
+	z-index: -1;
+	height: 5px;
+	width: 25px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	background-color: var(--primaryMain);
+	transition: all 0.25s;
+}
+
+.home-link:hover .home-link-underline,
+.home-link:active .home-link-underline {
+	background-color: var(--secondaryMain);
 }
 
 /* --------------------------------------- */
@@ -519,7 +599,7 @@ a:active {
 /* --------------------------------------- */
 /* FOOTER */
 /* --------------------------------------- */
-.footer-container {
+.footer-container-dark {
 	height: 125px;
 	width: 100%;
 	background: linear-gradient(
@@ -527,6 +607,12 @@ a:active {
 		var(--backgroundDark) 50%,
 		var(--backgroundLight) 50%
 	);
+}
+
+.footer-container-light {
+	height: 125px;
+	width: 100%;
+	background: var(--backgroundLight);
 }
 
 .footer {

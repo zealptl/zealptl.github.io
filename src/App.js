@@ -7,14 +7,16 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import theme from './theme';
 import HomePage from './pages/HomePage';
 import ProjectPages from './pages/ProjectPages';
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
 	return (
 		<ThemeProvider theme={theme}>
 			<Router>
-				<Switch>
-					<div className='App'>
-						{/* <AnimatedCursor
+				<ScrollToTop>
+					<Switch>
+						<div className='App'>
+							{/* <AnimatedCursor
               innerSize={15}
               outerSize={15}
               color='230, 146, 161'
@@ -22,10 +24,11 @@ const App = () => {
               innerScale={1}
               outerScale={3}
             /> */}
-						<Route exact path='/' component={HomePage} />
-						<Route path='/projects' component={ProjectPages} />
-					</div>
-				</Switch>
+							<Route exact path='/' component={HomePage} />
+							<Route path='/projects' component={ProjectPages} />
+						</div>
+					</Switch>
+				</ScrollToTop>
 			</Router>
 		</ThemeProvider>
 	);

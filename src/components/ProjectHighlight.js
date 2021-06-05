@@ -7,7 +7,7 @@ import ProjectTitle from './ProjectTitle';
 const ProjectHighlight = (props) => {
 	return (
 		<div className='project-highlight-container'>
-			<BackLink to='/' />
+			<BackLink to='/' heading='Back' />
 			<ProjectTitle>{props.title}</ProjectTitle>
 			<ProjectTechStack techStack={props.techStack} year={props.year} />
 		</div>

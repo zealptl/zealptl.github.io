@@ -2,6 +2,10 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import FoodtopiaImg from '../assets/foodtopia.png';
+import BudGetImg from '../assets/budget.png';
+import HacktechImg from '../assets/hacktech.png';
+import CCNYPrintingImg from '../assets/ccny_printing.png';
+import CCNYCoursesImg from '../assets/ccny_courses.png';
 
 import ProjectDetails from '../layout/ProjectDetails';
 
@@ -35,6 +39,7 @@ const ProjectPages = () => {
 					title: 'Customer Dashboard',
 				},
 			]}
+			nextProject='/projects/bud-get'
 		/>
 	);
 	const budGetPage = () => (
@@ -44,22 +49,23 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: FoodtopiaImg,
+					img: BudGetImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: BudGetImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: BudGetImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: BudGetImg,
 					title: 'Customer Dashboard',
 				},
 			]}
+			nextProject='/projects/hacktech'
 		/>
 	);
 	const hacktechPage = () => (
@@ -69,22 +75,23 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: FoodtopiaImg,
+					img: HacktechImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: HacktechImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: HacktechImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: HacktechImg,
 					title: 'Customer Dashboard',
 				},
 			]}
+			nextProject='/projects/ccny-printing'
 		/>
 	);
 	const ccnyPrintingPage = () => (
@@ -94,22 +101,23 @@ const ProjectPages = () => {
 			year='2019'
 			images={[
 				{
-					img: FoodtopiaImg,
+					img: CCNYPrintingImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: CCNYPrintingImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: CCNYPrintingImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: CCNYPrintingImg,
 					title: 'Customer Dashboard',
 				},
 			]}
+			nextProject='/projects/ccny-courses'
 		/>
 	);
 	const ccnyCoursesPage = () => (
@@ -119,22 +127,23 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: FoodtopiaImg,
+					img: CCNYCoursesImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: CCNYCoursesImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: CCNYCoursesImg,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
+					img: CCNYCoursesImg,
 					title: 'Customer Dashboard',
 				},
 			]}
+			nextProject='/projects/foodtopia'
 		/>
 	);
 

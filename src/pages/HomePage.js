@@ -9,17 +9,17 @@ import Contact from '../layout/Contact';
 import Footer from '../layout/Footer';
 
 const HomePage = () => {
-  return (
-    <div>
-      <Nav />
-      <Landing />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<Nav />
+			<Landing />
+			<About />
+			<Skills />
+			<Projects />
+			<Contact />
+			<Footer type='dark' />
+		</div>
+	);
 };
 
 export default HomePage;

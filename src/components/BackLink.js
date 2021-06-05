@@ -7,7 +7,7 @@ const BackLink = (props) => {
 	return (
 		<Link to={props.to} className='back-link'>
 			<ArrowRightAltIcon className='back-icon' />
-			Back
+			{props.heading}
 			<div className='back-link-underline'></div>
 		</Link>
 	);

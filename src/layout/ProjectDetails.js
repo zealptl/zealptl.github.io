@@ -5,6 +5,8 @@ import Nav from './Nav';
 import ProjectHighLight from '../components/ProjectHighlight';
 import ProjectDescription from '../components/ProjectDescription';
 import ProjectDetailImage from '../components/ProjectDetailImage';
+import Footer from './Footer';
+import NextProjectDetailPage from '../components/NextProjectDetailPage';
 
 const ProjectDetails = (props) => {
 	return (
@@ -35,6 +37,19 @@ const ProjectDetails = (props) => {
 					))}
 				</Grid>
 			</Grid>
+
+			<Grid
+				container
+				alignItems='center'
+				justify='center'
+				className='next-project-detail-link-wrapper'
+			>
+				<Grid item xs={12}>
+					<NextProjectDetailPage nextProject={props.nextProject} />
+				</Grid>
+			</Grid>
+
+			<Footer type='light' />
 		</div>
 	);
 };
