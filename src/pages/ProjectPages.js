@@ -6,10 +6,29 @@ import BudGetImg from '../assets/budget.png';
 import HacktechImg from '../assets/hacktech.png';
 import CCNYPrintingImg from '../assets/ccny_printing.png';
 import CCNYCoursesImg from '../assets/ccny_courses.png';
+import EpsilonImg from '../assets/epsilon.png';
 
 import ProjectDetails from '../layout/ProjectDetails';
 
 const ProjectPages = () => {
+	const epsilonPage = () => (
+		<ProjectDetails
+			title='Project Epsilon'
+			techStack={['JavaScript', 'Node', 'React', 'PostgreSQL']}
+			year='2021'
+			images={[
+				{
+					img: EpsilonImg,
+					title: 'Main Page',
+				},
+				{
+					img: EpsilonImg,
+					title: 'Group chat',
+				},
+			]}
+			nextProject='/projects/foodtopia'
+		/>
+	);
 	const foodtopiaPage = () => (
 		<ProjectDetails
 			title='Foodtopia'
@@ -143,12 +162,13 @@ const ProjectPages = () => {
 					title: 'Customer Dashboard',
 				},
 			]}
-			nextProject='/projects/foodtopia'
+			nextProject='/projects/epsilon'
 		/>
 	);
 
 	return (
 		<Switch>
+			<Route exact path='/projects/epsilon' component={epsilonPage} />
 			<Route exact path='/projects/foodtopia' component={foodtopiaPage} />
 			<Route exact path='/projects/bud-get' component={budGetPage} />
 			<Route exact path='/projects/hacktech' component={hacktechPage} />
