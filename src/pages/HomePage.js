@@ -7,10 +7,12 @@ import Skills from '../layout/Skills';
 import Projects from '../layout/Projects';
 import Contact from '../layout/Contact';
 import Footer from '../layout/Footer';
+import Alert from '@material-ui/lab/Alert';
 
 const HomePage = () => {
 	return (
 		<div>
+			<Alert severity='info'>This site is still under development.</Alert>
 			<Nav />
 			<Landing />
 			<About />
