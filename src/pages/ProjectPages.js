@@ -1,12 +1,32 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import FoodtopiaImg from '../assets/foodtopia.png';
-import BudGetImg from '../assets/budget.png';
-import HacktechImg from '../assets/hacktech.png';
-import CCNYPrintingImg from '../assets/ccny_printing.png';
-import CCNYCoursesImg from '../assets/ccny_courses.png';
-import EpsilonImg from '../assets/epsilon.png';
+import EpsilonDashboard from '../assets/epsilon_dashboard.png';
+import EpsilonGroupChat from '../assets/epsilon_groupchat.png';
+import EpsilonSignIn from '../assets/epsilon_signin.png';
+import EpsilonSignUp from '../assets/epsilon_signup.png';
+
+import FoodtopiaHome from '../assets/foodtopia_home.png';
+import FoodtopiaMenu from '../assets/foodtopia_menu.png';
+import FoodtopiaCustomerDashboard from '../assets/foodtopia_customer_dashboard.png';
+import FoodtopiaCustomerCart from '../assets/foodtopia_customer_cart.png';
+import FoodtopiaChefRecipes from '../assets/foodtopia_chef_recipes.png';
+import FoodtopiaChefOrders from '../assets/foodtopia_chef_orders.png';
+import FoodtopiaManager from '../assets/foodtopia_manager.png';
+import FoodtopiaDelivery from '../assets/foodtopia_delivery.png';
+
+import BudGetDashboardDark from '../assets/budget_dashboard_black.png';
+import BudGetDashboardLight from '../assets/budget_dashboard_light.png';
+import BudGetQuickAdd from '../assets/budget_quick_add.png';
+
+import HackTech from '../assets/hacktech.png';
+import HackTechTips from '../assets/hacktech_tips.png';
+
+import CCNYPrintingChart from '../assets/ccny_printing_chart.png';
+import CCNYPrintingPrint from '../assets/ccny_printing_print.png';
+import CCNYPrintingStudent from '../assets/ccny_printing_student.png';
+
+import CCNYCourses from '../assets/ccny_courses.png';
 
 import ProjectDetails from '../layout/ProjectDetails';
 
@@ -18,12 +38,20 @@ const ProjectPages = () => {
 			year='2021'
 			images={[
 				{
-					img: EpsilonImg,
-					title: 'Main Page',
+					img: EpsilonDashboard,
+					title: 'Dashboard',
 				},
 				{
-					img: EpsilonImg,
+					img: EpsilonGroupChat,
 					title: 'Group chat',
+				},
+				{
+					img: EpsilonSignIn,
+					title: 'Sign In',
+				},
+				{
+					img: EpsilonSignUp,
+					title: 'Sign Up',
 				},
 			]}
 			nextProject='/projects/foodtopia'
@@ -42,20 +70,40 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: FoodtopiaImg,
+					img: FoodtopiaHome,
+					title: 'Home',
+				},
+				{
+					img: FoodtopiaMenu,
+					title: 'Menu',
+				},
+				{
+					img: FoodtopiaCustomerDashboard,
 					title: 'Customer Dashboard',
 				},
 				{
-					img: FoodtopiaImg,
-					title: 'Customer Dashboard',
+					img: FoodtopiaCustomerCart,
+					title: 'Customer Cart',
 				},
 				{
-					img: FoodtopiaImg,
-					title: 'Customer Dashboard',
+					img: FoodtopiaChefRecipes,
+					title: "Chef's Recipes",
 				},
 				{
-					img: FoodtopiaImg,
-					title: 'Customer Dashboard',
+					img: FoodtopiaChefOrders,
+					title: "Chef's Orders ",
+				},
+				{
+					img: FoodtopiaManager,
+					title: 'Manager Dashboard',
+				},
+				{
+					img: FoodtopiaDelivery,
+					title: 'Delivery Dashboard',
+				},
+				{
+					img: FoodtopiaChefRecipes,
+					title: "Chef's Recipes",
 				},
 			]}
 			nextProject='/projects/bud-get'
@@ -68,20 +116,16 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: BudGetImg,
-					title: 'Customer Dashboard',
+					img: BudGetDashboardDark,
+					title: 'Dashboard - Dark mode',
 				},
 				{
-					img: BudGetImg,
-					title: 'Customer Dashboard',
+					img: BudGetDashboardLight,
+					title: 'Dashboard - Light mode',
 				},
 				{
-					img: BudGetImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: BudGetImg,
-					title: 'Customer Dashboard',
+					img: BudGetQuickAdd,
+					title: 'Quick Add',
 				},
 			]}
 			nextProject='/projects/hacktech'
@@ -94,20 +138,12 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: HacktechImg,
-					title: 'Customer Dashboard',
+					img: HackTech,
+					title: 'Home',
 				},
 				{
-					img: HacktechImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: HacktechImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: HacktechImg,
-					title: 'Customer Dashboard',
+					img: HackTechTips,
+					title: 'Tips',
 				},
 			]}
 			nextProject='/projects/ccny-printing'
@@ -120,20 +156,16 @@ const ProjectPages = () => {
 			year='2019'
 			images={[
 				{
-					img: CCNYPrintingImg,
-					title: 'Customer Dashboard',
+					img: CCNYPrintingChart,
+					title: 'Printers chart',
 				},
 				{
-					img: CCNYPrintingImg,
-					title: 'Customer Dashboard',
+					img: CCNYPrintingStudent,
+					title: 'Student Home Page',
 				},
 				{
-					img: CCNYPrintingImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: CCNYPrintingImg,
-					title: 'Customer Dashboard',
+					img: CCNYPrintingPrint,
+					title: 'Student Print Menu',
 				},
 			]}
 			nextProject='/projects/ccny-courses'
@@ -146,20 +178,8 @@ const ProjectPages = () => {
 			year='2020'
 			images={[
 				{
-					img: CCNYCoursesImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: CCNYCoursesImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: CCNYCoursesImg,
-					title: 'Customer Dashboard',
-				},
-				{
-					img: CCNYCoursesImg,
-					title: 'Customer Dashboard',
+					img: CCNYCourses,
+					title: 'Home',
 				},
 			]}
 			nextProject='/projects/epsilon'
