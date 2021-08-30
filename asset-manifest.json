@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7487d9a6.chunk.css",
-    "main.js": "/static/js/main.10377354.chunk.js",
-    "main.js.map": "/static/js/main.10377354.chunk.js.map",
+    "main.css": "/static/css/main.41ada624.chunk.css",
+    "main.js": "/static/js/main.23963854.chunk.js",
+    "main.js.map": "/static/js/main.23963854.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.17173866.js",
     "runtime-main.js.map": "/static/js/runtime-main.17173866.js.map",
     "static/css/2.ccc6f86f.chunk.css": "/static/css/2.ccc6f86f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.a27d62bd.chunk.js.map": "/static/js/2.a27d62bd.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ccc6f86f.chunk.css.map": "/static/css/2.ccc6f86f.chunk.css.map",
-    "static/css/main.7487d9a6.chunk.css.map": "/static/css/main.7487d9a6.chunk.css.map",
+    "static/css/main.41ada624.chunk.css.map": "/static/css/main.41ada624.chunk.css.map",
     "static/js/2.a27d62bd.chunk.js.LICENSE.txt": "/static/js/2.a27d62bd.chunk.js.LICENSE.txt",
     "static/media/Zeal_Patel_Resume.74fc231b.pdf": "/static/media/Zeal_Patel_Resume.74fc231b.pdf",
     "static/media/budget_dashboard_black.c6a1a51c.png": "/static/media/budget_dashboard_black.c6a1a51c.png",
@@ -40,7 +40,7 @@
     "static/js/runtime-main.17173866.js",
     "static/css/2.ccc6f86f.chunk.css",
     "static/js/2.a27d62bd.chunk.js",
-    "static/css/main.7487d9a6.chunk.css",
-    "static/js/main.10377354.chunk.js"
+    "static/css/main.41ada624.chunk.css",
+    "static/js/main.23963854.chunk.js"
   ]
 }
