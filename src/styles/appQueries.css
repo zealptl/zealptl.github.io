@@ -98,7 +98,7 @@
 	}
 
 	.nav-link-underline {
-		width: 45px;
+		width: 40px;
 	}
 
 	.home-text-zeal,
@@ -205,7 +205,7 @@
 	}
 
 	.nav-link-underline {
-		width: 45px;
+		width: 35px;
 	}
 
 	.home-text-zeal,
@@ -215,7 +215,7 @@
 	}
 
 	.home-logo-outer {
-		border-radius: 0 175px 0 0;
+		border-radius: 0 150px 0 0;
 	}
 
 	.home-logo {
@@ -277,14 +277,14 @@
 	}
 
 	.project-container {
-		margin: 50px 0;
+		margin: 30px 0;
 	}
 
 	.view-project-link-container {
 		width: 70px;
 		height: 70px;
 		right: -30px;
-		bottom: 90px;
+		bottom: 60px;
 		border-width: 3px;
 	}
 
@@ -292,11 +292,11 @@
 		width: 85px;
 		height: 85px;
 		right: -40px;
-		bottom: 85px;
+		bottom: 55px;
 	}
 
 	.view-project-link {
-		letter-spacing: 0.15em;
+		letter-spacing: 0.1em;
 	}
 
 	.contact-page {
@@ -314,4 +314,155 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+	* {
+		font-size: 14px;
+	}
+
+	.nav-link-underline {
+		margin-right: 20px;
+		right: -25px;
+		width: 30px;
+		height: 6px;
+	}
+
+	.home-text {
+		display: none;
+	}
+
+	.home-text-mobile {
+		display: block;
+		margin-top: -12%;
+	}
+
+	.home-text-mobile-zeal,
+	.home-text-mobile-patel {
+		font-size: 64px;
+	}
+
+	.home-text-mobile-zeal {
+		margin-left: -15%;
+	}
+
+	.home-text-mobile-patel {
+		margin-left: 15%;
+	}
+
+	.home-logo-outer {
+		border-radius: 0 150px 0 0;
+	}
+
+	.home-logo {
+		margin-top: -60px;
+		transform: scale(0.7);
+	}
+
+	.about-section-heading {
+		font-size: 64px;
+		transform: rotate(-90deg) translate(-400%, 100%);
+	}
+
+	.about-img-wrapper {
+		background-color: var(--backgroundLight);
+	}
+
+	.about-img-outer {
+		height: 40vh;
+		border-radius: 0 0 150px 0;
+	}
+
+	.about-img-inner {
+		height: 80%;
+	}
+
+	.about-description {
+		border-radius: 150px 0 0 150px;
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+
+	.about-description-text,
+	.project-description-text {
+		padding-top: 10px;
+		letter-spacing: 0.05em;
+		line-height: 115%;
+		z-index: 1;
+		font-size: 14px;
+	}
+
+	.skills-page {
+		border-radius: 0 0 100px 0;
+	}
+
+	.skills-page-heading {
+		font-size: 64px;
+	}
+
+	.skill-bar-container {
+		height: 20px;
+		margin-top: -25px;
+	}
+
+	.skill-container p {
+		font-size: 12px;
+	}
+
+	.skill-icon {
+		font-size: 20px;
+		z-index: 3;
+	}
+
+	.projects-section-light {
+		border-radius: 100px 0 0 100px;
+	}
+
+	.project-title-fill,
+	.project-title-border {
+		font-size: 24px;
+	}
+
+	.projects-page-heading {
+		font-size: 64px;
+		z-index: -1;
+	}
+
+	.project-container {
+		margin: 25px 0;
+	}
+
+	.project-image {
+		border-radius: 20px;
+	}
+
+	.view-project-link-container {
+		width: 50px;
+		height: 50px;
+		right: -25px;
+		bottom: 35px;
+		border-width: 3px;
+	}
+
+	.view-project-link-container:hover {
+		width: 65px;
+		height: 65px;
+		right: -40px;
+		bottom: 55px;
+	}
+
+	.view-project-link {
+		letter-spacing: 0.05em;
+		font-size: 12px;
+	}
+
+	.contact-page {
+		border-radius: 0 0 150px 0;
+		height: 60vh;
+	}
+
+	.contact-page-heading {
+		font-size: 64px;
+	}
+
+	.footer {
+		border-radius: 150px 0 0 0;
+	}
 }

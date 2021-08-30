@@ -5,16 +5,16 @@ import HomeLogo from '../components/HomeLogo';
 import HomeText from '../components/HomeText';
 
 const Landing = () => {
-  return (
-    <Grid container className='home-page' id='home'>
-      <Grid item xs={5}>
-        <HomeLogo />
-      </Grid>
-      <Grid item xs={7}>
-        <HomeText />
-      </Grid>
-    </Grid>
-  );
+	return (
+		<Grid container className='home-page' id='home'>
+			<Grid item xs={12} md={5} lg={5}>
+				<HomeLogo />
+			</Grid>
+			<Grid item xs={12} md={7} lg={7}>
+				<HomeText />
+			</Grid>
+		</Grid>
+	);
 };
 
 export default Landing;

@@ -55,7 +55,7 @@ const Projects = () => {
 			<Grid className='projects-section-dark' item xs={6}></Grid>
 			<Grid className='projects-section-light' item xs={6}></Grid>
 			{projects.map((project) => (
-				<Grid item xs={7}>
+				<Grid item xs={9} md={7} lg={7}>
 					<ProjectPreview
 						title={project.title}
 						image={project.image}

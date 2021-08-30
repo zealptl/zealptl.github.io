@@ -94,7 +94,7 @@ const ContactForm = () => {
 			/>
 			<form onSubmit={onSubmit}>
 				<Grid container spacing={2}>
-					<Grid item xs={6}>
+					<Grid item xs={12} md={6} lg={6}>
 						<CustomTextField
 							id='firstName'
 							name='firstName'
@@ -110,7 +110,7 @@ const ContactForm = () => {
 							}}
 						/>
 					</Grid>
-					<Grid item xs={6}>
+					<Grid item xs={12} md={6} lg={6}>
 						<CustomTextField
 							id='lastName'
 							name='lastName'

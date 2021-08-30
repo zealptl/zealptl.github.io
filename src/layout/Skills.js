@@ -55,7 +55,7 @@ const Skills = () => {
 			className='skills-page'
 			id='skills'
 		>
-			<Grid item xs={8}>
+			<Grid item xs={9} md={8} lg={8}>
 				<h1 className='skills-page-heading'>Skills</h1>
 				{skills.map((skill) => (
 					<Skill title={skill.title} icon={skill.icon} level={skill.level} />

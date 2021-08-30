@@ -97,6 +97,7 @@ a:active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .home-logo {
@@ -116,11 +117,17 @@ a:active {
 	font-size: 144px;
 	letter-spacing: 0.2em;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	color: #333333;
+	color: var(--backgroundDark);
+}
+
+.home-text-mobile {
+	display: none;
 }
 
 .home-text-zeal::first-letter,
-.home-text-patel::first-letter {
+.home-text-patel::first-letter,
+.home-text-mobile-zeal::first-letter,
+.home-text-mobile-patel::first-letter {
 	color: var(--primaryMain);
 }
 

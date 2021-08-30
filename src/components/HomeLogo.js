@@ -37,6 +37,11 @@ const HomeLogo = () => {
 						fill='#457B9D'
 					/>
 				</svg>
+				<div className='home-text-mobile'>
+					<p className='home-text-mobile-zeal'>Zeal</p>
+
+					<p className='home-text-mobile-patel'>Patel</p>
+				</div>
 			</div>
 		</div>
 	);
