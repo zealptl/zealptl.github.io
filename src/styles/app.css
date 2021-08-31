@@ -348,7 +348,6 @@ a:active {
 	cursor: pointer;
 	transform-origin: center;
 	transition: all 0.25s ease;
-	animation: rotation 5s infinite linear;
 }
 
 .view-project-link-container:hover {
@@ -370,15 +369,6 @@ a:active {
 .view-project-link-container:hover .view-project-link {
 	transform: scale(0.7);
 	letter-spacing: 0.125em;
-}
-
-@keyframes rotation {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(359deg);
-	}
 }
 
 /* --------------------------------------- */
