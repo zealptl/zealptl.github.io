@@ -436,6 +436,7 @@ a:active {
 	letter-spacing: 0.125em;
 	color: #ffffff;
 	margin-left: 50px;
+	word-wrap: break-word;
 }
 
 /* ----- PROJECT TECHSTACK ----- */
@@ -473,19 +474,15 @@ a:active {
 
 .project-description-container-inner {
 	height: 90vh;
+	width: 100%;
 	background: var(--backgroundLight);
 	border-radius: 0px 0px 0px 250px;
+	display: flex;
+	justify-content: center;
 }
 
 .project-description-text {
-	margin: 0 auto;
-	width: 70%;
 	padding-top: 50px;
-	font-weight: 300;
-	font-size: 18px;
-	letter-spacing: 0.1em;
-	line-height: 150%;
-	z-index: 1;
 }
 
 /* ----- PROJECT DETAILED IMAGES ----- */
@@ -503,11 +500,20 @@ a:active {
 /* ----- NEXT PROJECT DETAIL PAGE LINK ----- */
 .next-project-detail-link-wrapper {
 	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--backgroundDark);
 }
 
 .next-project-detail-page-container {
-	width: 500px;
-	margin: 0 auto;
+	background-color: var(--backgroundLight);
+	border-radius: 250px 0 0 0;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .next-project-detail-page-link {
@@ -528,7 +534,7 @@ a:active {
 	height: 15px;
 	position: absolute;
 	right: 8.5%;
-	bottom: 2%;
+	bottom: 8%;
 	background: var(--primaryMain);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 12px;
@@ -547,7 +553,6 @@ a:active {
 	align-items: center;
 	width: 60px;
 	margin-left: -40px;
-	padding-top: 20px;
 	color: var(--fontDark);
 	position: relative;
 	z-index: 1;

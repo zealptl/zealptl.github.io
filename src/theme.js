@@ -26,7 +26,15 @@ const theme = createMuiTheme({
 			light: '#fff',
 		},
 	},
-	// add more css properties as desired
+	// breakpoints: {
+	// 	values: {
+	// 		xs: 0,
+	// 		sm: 480,
+	// 		md: 767,
+	// 		lg: 1200,
+	// 		xl: 1920,
+	// 	},
+	// },
 });
 
 export default theme;

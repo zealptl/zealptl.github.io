@@ -13,14 +13,14 @@ const ProjectDetails = (props) => {
 		<div>
 			<Nav />
 			<Grid container>
-				<Grid item xs={5}>
+				<Grid item xs={12} md={5} lg={5}>
 					<ProjectHighLight
 						title={props.title}
 						techStack={props.techStack}
 						year={props.year}
 					/>
 				</Grid>
-				<Grid item xs={7}>
+				<Grid item xs={12} md={7} lg={7}>
 					<ProjectDescription />
 				</Grid>
 			</Grid>
@@ -31,23 +31,25 @@ const ProjectDetails = (props) => {
 				justify='center'
 				className='project-detail-images'
 			>
-				<Grid item xs={7}>
+				<Grid item xs={9} md={7} lg={7}>
 					{props.images.map((image) => (
 						<ProjectDetailImage title={image.title} img={image.img} />
 					))}
 				</Grid>
 			</Grid>
 
-			<Grid
-				container
-				alignItems='center'
-				justify='center'
-				className='next-project-detail-link-wrapper'
-			>
-				<Grid item xs={12}>
-					<NextProjectDetailPage nextProject={props.nextProject} />
+			<div className='next-project-detail-link-wrapper'>
+				<Grid
+					container
+					alignItems='center'
+					justify='center'
+					className='next-project-detail-link-container'
+				>
+					<Grid item xs={12}>
+						<NextProjectDetailPage nextProject={props.nextProject} />
+					</Grid>
 				</Grid>
-			</Grid>
+			</div>
 
 			<Footer type='light' />
 		</div>

@@ -7,15 +7,17 @@ import HomeLink from './HomeLink';
 const NextProjectDetailPage = (props) => {
 	return (
 		<div className='next-project-detail-page-container'>
-			<p style={{ fontWeight: 300 }}>See also</p>
+			<div>
+				<p style={{ fontWeight: 300 }}>See also</p>
 
-			<Link className='next-project-detail-page-link' to={props.nextProject}>
-				Next Project
-				<ArrowRightAltIcon className='next-project-icon' />
-				<div className='next-project-detail-link-underline'></div>
-			</Link>
+				<Link className='next-project-detail-page-link' to={props.nextProject}>
+					Next Project
+					<ArrowRightAltIcon className='next-project-icon' />
+					<div className='next-project-detail-link-underline'></div>
+				</Link>
 
-			<HomeLink to='/' heading='Home' />
+				<HomeLink to='/' heading='Home' />
+			</div>
 		</div>
 	);
 };
