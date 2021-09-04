@@ -1,7 +1,9 @@
 import './styles/app.css';
 import './styles/appQueries.css';
+import { useRef, useEffect } from 'react';
 import { ThemeProvider } from '@material-ui/core';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import gsap from 'gsap';
 // import AnimatedCursor from 'react-animated-cursor';
 
 import theme from './theme';
@@ -10,12 +12,16 @@ import ProjectPages from './pages/ProjectPages';
 import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
+	const app = useRef();
+	useEffect(() => {
+		gsap.to(app.current, 0, { css: { visibility: 'visible' } });
+	});
 	return (
 		<ThemeProvider theme={theme}>
 			<Router>
 				<ScrollToTop>
 					<Switch>
-						<div className='App'>
+						<div ref={app} className='App'>
 							{/* <AnimatedCursor
               innerSize={15}
               outerSize={15}

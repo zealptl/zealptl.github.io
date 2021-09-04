@@ -1,42 +1,216 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import gsap from 'gsap';
+import animationTimes from '../constants/animationTimes';
 
 const HomeLogo = () => {
+	const homeLogo = useRef();
+	const topSemiCirc = useRef();
+	const bottomSemiCirc = useRef();
+	const leftTriangle = useRef();
+	const rightTriangle = useRef();
+	const tl = gsap.timeline();
+
+	useEffect(() => {
+		tl.from(homeLogo.current, animationTimes.homeLogoDuration, {
+			scale: 5,
+			ease: 'back.out(1.7)',
+		})
+			.to(bottomSemiCirc.current, animationTimes.logoSectionsDuration, {
+				translateY: '130px',
+			})
+			.to(
+				topSemiCirc.current,
+				animationTimes.logoSectionsDuration,
+				{
+					translateY: '-130px',
+				},
+				`-=${animationTimes.logoSectionsDuration}`
+			)
+			.to(leftTriangle.current, 0.3, { translateX: '40px' })
+			.to(
+				rightTriangle.current,
+				0.3,
+				{
+					translateX: '-40px',
+				},
+				`-=${animationTimes.logoSectionsDuration}`
+			);
+	}, [animationTimes]);
+
 	return (
 		<div className='home-logo-outer'>
 			<div className='home-logo-inner'>
 				<svg
+					ref={homeLogo}
 					className='home-logo'
-					width='232'
-					height='472'
-					viewBox='0 0 232 472'
+					width='280'
+					height='600'
+					viewBox='0 0 280 280'
 					fill='none'
 					xmlns='http://www.w3.org/2000/svg'
 				>
-					<path
-						fill-rule='evenodd'
-						clip-rule='evenodd'
-						d='M220.35 401.177C226.106 387.281 229.068 372.388 229.068 357.347L114.534 357.347V357.347L0 357.347C-1.92448e-05 372.388 2.96248 387.282 8.71836 401.178C14.4742 415.074 22.9108 427.7 33.5463 438.335C44.1818 448.971 56.8079 457.407 70.7039 463.163C84.5998 468.919 99.4934 471.882 114.534 471.882V471.881C129.575 471.881 144.469 468.919 158.365 463.163C172.26 457.407 184.887 448.971 195.522 438.335C206.158 427.7 214.594 415.073 220.35 401.177Z'
-						fill='#457B9D'
-					/>
-					<path
-						fill-rule='evenodd'
-						clip-rule='evenodd'
-						d='M116.825 311.533H229.069V158.821L116.825 271.064L116.825 271.065L76.3564 311.533L116.825 311.533Z'
-						fill='#457B9D'
-					/>
-					<path
-						fill-rule='evenodd'
-						clip-rule='evenodd'
-						d='M0 311.533V158.821H116.825V194.327L0 311.533ZM116.825 158.821H152.713L116.825 194.327V158.821Z'
-						fill='#457B9D'
-					/>
-					<path
-						fill-rule='evenodd'
-						clip-rule='evenodd'
-						d='M11.0094 70.7039C5.25353 84.5999 2.29102 99.4934 2.29102 114.534L116.825 114.534L231.359 114.534C231.359 99.4935 228.397 84.5999 222.641 70.704C216.885 56.808 208.449 44.1819 197.813 33.5464C187.178 22.9109 174.552 14.4744 160.656 8.71847C146.76 2.96259 131.866 7.82454e-05 116.825 6.10352e-05V0C101.784 -1.97237e-06 86.8909 2.96251 72.9949 8.7184C59.099 14.4743 46.4728 22.9108 35.8373 33.5463C25.2018 44.1818 16.7653 56.808 11.0094 70.7039Z'
-						fill='#457B9D'
-					/>
+					<g ref={bottomSemiCirc} filter='url(#filter0_d)'>
+						<path
+							d='M260 135C260 150.759 256.896 166.363 250.866 180.922C244.835 195.481 235.996 208.71 224.853 219.853C213.71 230.996 200.481 239.835 185.922 245.866C171.363 251.896 155.759 255 140 255C124.241 255 108.637 251.896 94.078 245.866C79.5189 239.835 66.2902 230.996 55.1472 219.853C44.0042 208.71 35.165 195.481 29.1345 180.922C23.1039 166.363 20 150.759 20 135L140 135H260Z'
+							fill='#457B9D'
+						/>
+					</g>
+					<g ref={topSemiCirc} filter='url(#filter1_d)'>
+						<path
+							d='M260 135C260 103.174 247.357 72.6516 224.853 50.1472C202.348 27.6428 171.826 15 140 15C108.174 15 77.6516 27.6428 55.1472 50.1472C32.6428 72.6515 20 103.174 20 135L140 135H260Z'
+							fill='#457B9D'
+						/>
+					</g>
+					<g ref={leftTriangle} filter='url(#filter2_d)'>
+						<path d='M220 215L220 55L60 215L220 215Z' fill='#457B9D' />
+					</g>
+					<g ref={rightTriangle} filter='url(#filter3_d)'>
+						<path d='M60 55V215L220 55H60Z' fill='#457B9D' />
+					</g>
+					<defs>
+						<filter
+							id='filter0_d'
+							x='0'
+							y='120'
+							width='280'
+							height='160'
+							filterUnits='userSpaceOnUse'
+							color-interpolation-filters='sRGB'
+						>
+							<feFlood flood-opacity='0' result='BackgroundImageFix' />
+							<feColorMatrix
+								in='SourceAlpha'
+								type='matrix'
+								values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+								result='hardAlpha'
+							/>
+							<feOffset dy='5' />
+							<feGaussianBlur stdDeviation='10' />
+							<feComposite in2='hardAlpha' operator='out' />
+							<feColorMatrix
+								type='matrix'
+								values='0 0 0 0 0.270588 0 0 0 0 0.482353 0 0 0 0 0.615686 0 0 0 0.4 0'
+							/>
+							<feBlend
+								mode='normal'
+								in2='BackgroundImageFix'
+								result='effect1_dropShadow'
+							/>
+							<feBlend
+								mode='normal'
+								in='SourceGraphic'
+								in2='effect1_dropShadow'
+								result='shape'
+							/>
+						</filter>
+						<filter
+							id='filter1_d'
+							x='0'
+							y='0'
+							width='280'
+							height='160'
+							filterUnits='userSpaceOnUse'
+							color-interpolation-filters='sRGB'
+						>
+							<feFlood flood-opacity='0' result='BackgroundImageFix' />
+							<feColorMatrix
+								in='SourceAlpha'
+								type='matrix'
+								values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+								result='hardAlpha'
+							/>
+							<feOffset dy='5' />
+							<feGaussianBlur stdDeviation='10' />
+							<feComposite in2='hardAlpha' operator='out' />
+							<feColorMatrix
+								type='matrix'
+								values='0 0 0 0 0.270588 0 0 0 0 0.482353 0 0 0 0 0.615686 0 0 0 0.4 0'
+							/>
+							<feBlend
+								mode='normal'
+								in2='BackgroundImageFix'
+								result='effect1_dropShadow'
+							/>
+							<feBlend
+								mode='normal'
+								in='SourceGraphic'
+								in2='effect1_dropShadow'
+								result='shape'
+							/>
+						</filter>
+						<filter
+							id='filter2_d'
+							x='40'
+							y='40'
+							width='200'
+							height='200'
+							filterUnits='userSpaceOnUse'
+							color-interpolation-filters='sRGB'
+						>
+							<feFlood flood-opacity='0' result='BackgroundImageFix' />
+							<feColorMatrix
+								in='SourceAlpha'
+								type='matrix'
+								values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+								result='hardAlpha'
+							/>
+							<feOffset dy='5' />
+							<feGaussianBlur stdDeviation='10' />
+							<feComposite in2='hardAlpha' operator='out' />
+							<feColorMatrix
+								type='matrix'
+								values='0 0 0 0 0.270588 0 0 0 0 0.482353 0 0 0 0 0.615686 0 0 0 0.4 0'
+							/>
+							<feBlend
+								mode='normal'
+								in2='BackgroundImageFix'
+								result='effect1_dropShadow'
+							/>
+							<feBlend
+								mode='normal'
+								in='SourceGraphic'
+								in2='effect1_dropShadow'
+								result='shape'
+							/>
+						</filter>
+						<filter
+							id='filter3_d'
+							x='40'
+							y='40'
+							width='200'
+							height='200'
+							filterUnits='userSpaceOnUse'
+							color-interpolation-filters='sRGB'
+						>
+							<feFlood flood-opacity='0' result='BackgroundImageFix' />
+							<feColorMatrix
+								in='SourceAlpha'
+								type='matrix'
+								values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'
+								result='hardAlpha'
+							/>
+							<feOffset dy='5' />
+							<feGaussianBlur stdDeviation='10' />
+							<feComposite in2='hardAlpha' operator='out' />
+							<feColorMatrix
+								type='matrix'
+								values='0 0 0 0 0.270588 0 0 0 0 0.482353 0 0 0 0 0.615686 0 0 0 0.4 0'
+							/>
+							<feBlend
+								mode='normal'
+								in2='BackgroundImageFix'
+								result='effect1_dropShadow'
+							/>
+							<feBlend
+								mode='normal'
+								in='SourceGraphic'
+								in2='effect1_dropShadow'
+								result='shape'
+							/>
+						</filter>
+					</defs>
 				</svg>
+
 				<div className='home-text-mobile'>
 					<p className='home-text-mobile-zeal'>Zeal</p>
 

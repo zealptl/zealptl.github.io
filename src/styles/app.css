@@ -17,6 +17,10 @@
 	font-size: 20px;
 }
 
+.App {
+	visibility: hidden;
+}
+
 /* --------------------------------------- */
 /* RESUABLE COMPONENTS */
 /* --------------------------------------- */
@@ -98,10 +102,6 @@ a:active {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-}
-
-.home-logo {
-	margin-top: 50px;
 }
 
 /* ----- HOME TEXT ----- */
@@ -322,6 +322,7 @@ a:active {
 	font-size: 64px;
 	font-weight: 700;
 	letter-spacing: 0.05em;
+	word-wrap: break-word;
 }
 .project-title-fill {
 	color: var(--fontLight);
