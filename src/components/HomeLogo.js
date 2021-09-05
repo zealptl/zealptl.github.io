@@ -26,7 +26,7 @@ const HomeLogo = () => {
 			.from(homeLogo.current, {
 				duration: animationTimes.homeLogoDuration,
 				opacity: 0,
-				scale: 3,
+				scale: 5,
 				ease: 'back.out(1.7)',
 				delay: animationTimes.homeLogoContainerDuration,
 			})
