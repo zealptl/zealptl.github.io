@@ -3,43 +3,58 @@ import gsap from 'gsap';
 import animationTimes from '../constants/animationTimes';
 
 const HomeLogo = () => {
+	const tl = gsap.timeline();
+	const homeLogoOuter = useRef();
+	const homeLogoInner = useRef();
 	const homeLogo = useRef();
 	const topSemiCirc = useRef();
 	const bottomSemiCirc = useRef();
 	const leftTriangle = useRef();
 	const rightTriangle = useRef();
-	const tl = gsap.timeline();
 
 	useEffect(() => {
-		tl.from(homeLogo.current, animationTimes.homeLogoDuration, {
-			scale: 5,
-			ease: 'back.out(1.7)',
+		tl.from(homeLogoOuter.current, {
+			duration: animationTimes.homeLogoContainerDuration,
+			height: 0,
+			opacity: 0,
 		})
-			.to(bottomSemiCirc.current, animationTimes.logoSectionsDuration, {
+			.from(homeLogoInner.current, {
+				duration: animationTimes.homeLogoContainerDuration,
+				height: 0,
+				opacity: 0,
+			})
+			.from(homeLogo.current, {
+				duration: animationTimes.homeLogoDuration,
+				opacity: 0,
+				scale: 3,
+				ease: 'back.out(1.7)',
+				delay: animationTimes.homeLogoContainerDuration,
+			})
+			.to(bottomSemiCirc.current, {
+				duration: animationTimes.logoSectionsDuration,
 				translateY: '130px',
 			})
-			.to(
-				topSemiCirc.current,
-				animationTimes.logoSectionsDuration,
-				{
-					translateY: '-130px',
-				},
-				`-=${animationTimes.logoSectionsDuration}`
-			)
-			.to(leftTriangle.current, 0.3, { translateX: '40px' })
-			.to(
-				rightTriangle.current,
-				0.3,
-				{
-					translateX: '-40px',
-				},
-				`-=${animationTimes.logoSectionsDuration}`
-			);
-	}, [animationTimes]);
+			.to(topSemiCirc.current, {
+				duration: animationTimes.logoSectionsDuration,
+				translateY: '-130px',
+				delay: -animationTimes.logoSectionsDuration,
+			})
+			.to(leftTriangle.current, {
+				duration: animationTimes.logoSectionsDuration,
+				translateX: '40px',
+			})
+			.to(rightTriangle.current, {
+				duration: animationTimes.logoSectionsDuration,
+				translateX: '-40px',
+				delay: -animationTimes.logoSectionsDuration,
+			});
+
+		console.log(tl.duration());
+	}, [tl]);
 
 	return (
-		<div className='home-logo-outer'>
-			<div className='home-logo-inner'>
+		<div ref={homeLogoOuter} className='home-logo-outer'>
+			<div ref={homeLogoInner} className='home-logo-inner'>
 				<svg
 					ref={homeLogo}
 					className='home-logo'
