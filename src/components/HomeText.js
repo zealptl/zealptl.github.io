@@ -12,12 +12,12 @@ const HomeText = () => {
 			opacity: 0,
 			translateY: '-200px',
 			ease: 'back.out(1.7)',
-			delay: animationTimes.logoAnimationTotal,
+			delay: animationTimes.logoAnimationTotal + 0.1,
 		});
 		gsap.from(homeTextPatel.current, {
 			duration: animationTimes.homeTextDuration,
 			opacity: 0,
-			translateY: '200px',
+			translateY: '-200px',
 			ease: 'back.out(1.7)',
 			delay: animationTimes.logoAnimationTotal,
 		});

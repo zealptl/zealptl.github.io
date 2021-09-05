@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
+
 import animationTimes from '../constants/animationTimes';
 
 const HomeLogo = () => {
@@ -28,7 +29,6 @@ const HomeLogo = () => {
 				opacity: 0,
 				scale: 5,
 				ease: 'back.out(1.7)',
-				delay: animationTimes.homeLogoContainerDuration,
 			})
 			.to(bottomSemiCirc.current, {
 				duration: animationTimes.logoSectionsDuration,
@@ -48,8 +48,6 @@ const HomeLogo = () => {
 				translateX: '-40px',
 				delay: -animationTimes.logoSectionsDuration,
 			});
-
-		console.log(tl.duration());
 	}, [tl]);
 
 	return (

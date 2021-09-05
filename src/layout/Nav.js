@@ -35,11 +35,10 @@ const Nav = () => {
 	useEffect(() => {
 		gsap.from(linksRef.current, {
 			duration: animationTimes.navDuration,
-			translateY: '-100px',
+			translateY: '-50px',
 			opacity: 0,
-			delay:
-				animationTimes.logoAnimationTotal +
-				animationTimes.homeTextAnimationTotal,
+			ease: 'back.out(1.7)',
+			delay: animationTimes.logoAnimationTotal + 0.3,
 		});
 	});
 
