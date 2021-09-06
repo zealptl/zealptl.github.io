@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.009f8a27.chunk.css",
-    "main.js": "/static/js/main.0bed52f1.chunk.js",
-    "main.js.map": "/static/js/main.0bed52f1.chunk.js.map",
+    "main.css": "/static/css/main.6746819d.chunk.css",
+    "main.js": "/static/js/main.d1ce28b4.chunk.js",
+    "main.js.map": "/static/js/main.d1ce28b4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.17173866.js",
     "runtime-main.js.map": "/static/js/runtime-main.17173866.js.map",
     "static/css/2.ccc6f86f.chunk.css": "/static/css/2.ccc6f86f.chunk.css",
-    "static/js/2.e0112059.chunk.js": "/static/js/2.e0112059.chunk.js",
-    "static/js/2.e0112059.chunk.js.map": "/static/js/2.e0112059.chunk.js.map",
+    "static/js/2.92d53caf.chunk.js": "/static/js/2.92d53caf.chunk.js",
+    "static/js/2.92d53caf.chunk.js.map": "/static/js/2.92d53caf.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ccc6f86f.chunk.css.map": "/static/css/2.ccc6f86f.chunk.css.map",
-    "static/css/main.009f8a27.chunk.css.map": "/static/css/main.009f8a27.chunk.css.map",
-    "static/js/2.e0112059.chunk.js.LICENSE.txt": "/static/js/2.e0112059.chunk.js.LICENSE.txt",
+    "static/css/main.6746819d.chunk.css.map": "/static/css/main.6746819d.chunk.css.map",
+    "static/js/2.92d53caf.chunk.js.LICENSE.txt": "/static/js/2.92d53caf.chunk.js.LICENSE.txt",
     "static/media/Zeal_Patel_Resume.74fc231b.pdf": "/static/media/Zeal_Patel_Resume.74fc231b.pdf",
     "static/media/budget_dashboard_black.c6a1a51c.png": "/static/media/budget_dashboard_black.c6a1a51c.png",
     "static/media/budget_dashboard_light.fdae6c4e.png": "/static/media/budget_dashboard_light.fdae6c4e.png",
@@ -39,8 +39,8 @@
   "entrypoints": [
     "static/js/runtime-main.17173866.js",
     "static/css/2.ccc6f86f.chunk.css",
-    "static/js/2.e0112059.chunk.js",
-    "static/css/main.009f8a27.chunk.css",
-    "static/js/main.0bed52f1.chunk.js"
+    "static/js/2.92d53caf.chunk.js",
+    "static/css/main.6746819d.chunk.css",
+    "static/js/main.d1ce28b4.chunk.js"
   ]
 }
