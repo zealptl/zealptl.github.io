@@ -28,7 +28,7 @@ import CCNYPrintingStudent from '../assets/ccny_printing_student.png';
 
 import CCNYCourses from '../assets/ccny_courses.png';
 
-import ProjectDetails from '../layout/ProjectDetails';
+import ProjectDetails from '../sections/ProjectDetails';
 
 const ProjectPages = () => {
 	const epsilonPage = () => (

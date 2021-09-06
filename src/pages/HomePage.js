@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Nav from '../layout/Nav';
-import Landing from '../layout/Landing';
-import About from '../layout/About';
-import Skills from '../layout/Skills';
-import Projects from '../layout/Projects';
-import Contact from '../layout/Contact';
-import Footer from '../layout/Footer';
+import Nav from '../sections/Nav';
+import Landing from '../sections/Landing';
+import About from '../sections/About';
+import Skills from '../sections/Skills';
+import Projects from '../sections/Projects';
+import Contact from '../sections/Contact';
+import Footer from '../sections/Footer';
 import Alert from '@material-ui/lab/Alert';
 
 const HomePage = () => {
