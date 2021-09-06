@@ -193,9 +193,12 @@ a:active {
 	padding-bottom: 50px;
 }
 
+.about-description-text-container {
+	width: 70%;
+}
+
 .about-description-text,
 .project-description-text {
-	width: 70%;
 	padding-top: 30px;
 	font-weight: 300;
 	font-size: 18px;
